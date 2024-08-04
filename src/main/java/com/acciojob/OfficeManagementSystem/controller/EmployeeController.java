@@ -26,7 +26,7 @@ public class EmployeeController {
     @GetMapping("/get-employee")
     public Employee getEmp(@RequestParam("id") int empId){
         return employeeservices.getEmp(empId);
-    }
+    }   
 
     @DeleteMapping("/delete-employee/{id}")
     public String deletEmp(@PathVariable("id") int empId){
